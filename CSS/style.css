@@ -1,0 +1,452 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-image: url(../Imagenes/Fondo/abstractbg4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Encabezado */
+.encabezado-sitio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navegacion-principal .enlace-nav {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.navegacion-principal .enlace-nav:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* Pie de pagina */
+.pie-pagina {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.redes-sociales {
+  margin-bottom: 10px;
+}
+
+.enlace-red {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.icono-red {
+  width: 30px;
+  transition: transform 0.3s;
+}
+
+.icono-red:hover {
+  transform: scale(1.2);
+}
+
+.derechos {
+  color: white;
+  font-size: 14px;
+}
+
+* h1 {
+  font-size: 4.5rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  color: #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  border-bottom: 2px solid #ffd700;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+
+/* =============================
+   CONTENIDO PRINCIPAL
+============================= */
+.contenedor {
+  margin-top: 20px;
+  padding: 0;
+}
+
+/* =============================
+   HERO / VIDEO DE FONDO
+============================= */
+.seccion-hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.seccion-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.texto-hero {
+  z-index: 1;
+}
+
+.titulo-principal {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 85px;
+  font-weight: bold;
+  color: #ffd700;
+  margin: 20px 0;
+}
+
+.subtitulo-principal {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+}
+
+/* =============================
+   BARRA PROMOCIONES
+============================= */
+.barra marquee {
+  background-color: #ffd700;
+  padding: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  display: block;
+  margin: 0;
+}
+
+.texto-barra span {
+  margin-right: 100px;
+}
+
+/* =============================
+   SECCIÓN ENTRENADORES
+============================= */
+.seccion-entrenadores {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.rejilla-entrenadores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.tarjeta-entrenador .imagen-entrenador {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-entrenador .imagen-entrenador:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =============================
+   SECCIÓN NOSOTROS
+============================= */
+.contenido-nosotros {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  color: #ffd700;
+}
+
+.seccion-nosotros {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* texto - imagen */
+  align-items: center;
+  gap: 2rem;
+}
+
+.seccion-nosotros .bloque-info {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.seccion-nosotros .texto h2 {
+  color: #ffffff;
+}
+
+.seccion-nosotros .texto p {
+  line-height: 1.6;
+	color: #ffffff;
+}
+
+.seccion-nosotros ul {
+  margin-top: 1rem;
+	color: #ffffff;
+  list-style-position: inside;
+}
+
+.imagen-logo img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.seccion-reels {
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+.contenedor-reels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.contenedor-reels iframe {
+  width: 100%;
+  max-width: 350px;
+  height: 600px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* =============================
+   CONTACTO
+============================= */
+.contacto .seccion-informacion {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contacto .texto-contacto {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.contacto .seccion-redes {
+  margin: 4rem auto;
+}
+
+.contacto .contenedor-redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.contacto .icono-red-social {
+  width: 90px;
+  height: 90px;
+}
+
+.contacto .seccion-mapa iframe {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+/* =============================
+   EXPERIENCIA
+============================= */
+.pagina-experiencia p,
+.pagina-experiencia li,
+.pagina-experiencia blockquote {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #f0f0f0;
+  list-style-position: inside;
+}
+
+  /* margin-bottom: 1.5rem; */
+.seccion-trayectoria,
+.seccion-logros,
+.seccion-testimonios {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+  .pagina-experiencia .lista-logros {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+.pagina-experiencia .testimonio {
+  font-style: italic;
+  border-left: 4px solid #ffd700;
+  padding-left: 20px;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.pagina-experiencia cite {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+  color: #ccc;
+}
+/* =============================
+   MEMBRESÍAS
+============================= */
+.contenedor-planes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tarjeta-plan {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffd700;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-plan:hover {
+  transform: scale(1.05);
+}
+
+.nombre-plan {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.precio-plan {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.lista-beneficios {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  color: #f0f0f0;
+}
+
+.lista-beneficios li {
+  margin: 0.5rem 0;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.boton-inscripcion {
+  background-color: #208b4dc2;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.boton-inscripcion:hover {
+  background-color: #22a056;
+}
+
+/* Tabla */
+.tabla-descuentos {
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tabla-descuentos table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabla-descuentos th,
+.tabla-descuentos td {
+  border: 1px solid #ffd700;
+  padding: 1rem;
+}
+
+.tabla-descuentos th {
+  background-color: #ffd700;
+  color: #222;
+}
+
+
