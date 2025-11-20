@@ -68,9 +68,8 @@ h2 {
 .nav-links {
   display: flex;
   gap: 35px;
-
-  transition: all .5s ease; /* Habilita animación */
-  transform-origin: left;   /* Se comprime hacia la izquierda */
+  transition: all .5s ease;
+  transform-origin: left;
 }
 
 .nav-links .enlace-nav {
@@ -84,11 +83,7 @@ h2 {
 }
 
 .nav-links.active {
-  /* visibility: hidden;
-  opacity: 0;
-  pointer-events: none; */
-
-  transform: translateX(-30px) scaleX(0); /* Se encoge a la izquierda */
+  transform: translateX(-30px) scaleX(0);
   opacity: 0;
   pointer-events: none;
 }
@@ -542,8 +537,8 @@ select#motivo {
 .grupo-checkbox {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;                /* separación entre casillas */
-  justify-content: center; /* centra todo */
+  gap: 18px;
+  justify-content: center;
   margin-bottom: 12px;
 }
 
@@ -768,6 +763,7 @@ select#motivo {
 }
 
 /* #endregion Clases */
+
 
 
 
